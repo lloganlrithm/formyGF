@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  .foxIcon {
+    width: 100px;
+    height: 100px;
+    animation: bounce 1s infinite;
+    position: absolute;
+    top: 20%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+  }
+  
+body{
+    margin: 0%;
+    padding: 0;
+    background-image: url(Imge/Wallpapepixle.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Pixelify Sans", sans-serif;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: #fcd92a;
+    text-shadow: 4px 5px 5px rgb(73, 73, 73);
+    -webkit-text-stroke: 1px #f7abc4bd;
+}
+@keyframes fadeInBounce {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#StartBtn{
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  justify-content: center;
+  position: absolute;
+  left: 46%;
+  top: 70%;
+  cursor: pointer;
+  animation: fadeInBounce 1s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+#StatBtn:hover{
+  transform: scale(1.2);
+}
+.journey-container{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 20px; 
+  margin: 20px 0;
+  left: 200%;
+}  
+.letter {
+  color: #fcd92a;
+  text-shadow: 4px 5px 5px rgb(73, 73, 73);
+  -webkit-text-stroke: 1px #f7abc4bd;
+  font-size: 30px;
+  gap: 20px;
+  
+}
+#StartBtn:hover{
+  transform: scale(1.00);
+}
+#StartBtn:active {
+  transform: scale(1.00);
+}
+
+.letter2{
+  color: #fcd92a;
+  text-shadow: 4px 5px 5px rgb(73, 73, 73);
+  -webkit-text-stroke: 1px #f7abc4bd;
+  font-size: 30px;
+  gap: 20px;
+}
+/* text-shadow: 2px 2px 0 rgb(189, 189, 176), 4px 4px 0 #000; */

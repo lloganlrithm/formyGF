@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+body{
+    background-image: url(Imge/Wallpapepixle.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    margin: 0%;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    font-family: "Pixelify Sans", sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    gap: 150px;
+    top: 28%;
+    left: 22%;
+    position: absolute;
+}
+.song{
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+.song:hover{
+  transform: scale(1.05);
+}
+.song:active {
+  transform: scale(0.95);
+}
+.song img {
+  width: 275px;
+  height: auto;
+  object-fit: contain;
+}
+#TextBack3{
+    margin-top: 2px;
+    margin-bottom: 10px;
+    font-size: 38px;
+    font-weight: 10px;
+    line-height: 2;
+    text-decoration: underline;
+    object-fit: contain;
+    justify-content: center;
+    position: absolute;
+    left: 44%;
+    top: 110%;
+    cursor: pointer;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>song</title>
+    <script src="js/Process.js" defer></script>
+    <link rel="icon" type="image/png" href="Imge/heart_6837774.png">
+    <link rel="stylesheet" href="p5.css">
+</head>
+<body>
+    <div class="container">
+        <div class="song">
+            <img src="Imge/Superpower.png" alt="Superpower" id="Superpower">
+            <audio id="song1" src="Music/Daniel Caesar - Superpowers (Official Audio).mp3"></audio>
+        </div>
+        <div class="song">
+                <img src="Imge/Iwannabeyour.png" alt="Iwannabeyour" id="Iwannabeyour"/>
+                 <audio id="song2" src="Music/I Wanna Be Yours.mp3"></audio>
+            </div>
+            <div class="song">
+                <img src="Imge/Honey.png" alt="Honey" id="Honey"/>
+                 <audio id="song3" src="Music/Boy Pablo - Honey.mp3"></audio>
+            </div>
+            <p id="TextBack3"> Back </p>
+            <script>
+                document.getElementById("TextBack3").addEventListener("click", function () {
+                window.location.href = "page2.html";
+                });
+            </script>
+
+    </div>
+    <script>
+        const songMap ={
+            Superpower: "song1",
+            Iwannabeyour: "song2",
+            Honey:"song3",
+        };
+        let currentlyPlaying = null;
+
+        Object.keys(songMap).forEach((imgId) => {
+            const img = document.getElementById(imgId);
+            const audioId = songMap[imgId];
+            const audio = document.getElementById(audioId);
+
+            img.addEventListener("click", () => {
+                if(currentlyPlaying === audio){
+                    audio.pause();
+                    audio.currentTime = 0;
+                    currentlyPlaying = null;
+                    return;
+                }
+                    if(currentlyPlaying){
+                        currentlyPlaying.pause();
+                        currentlyPlaying.currentTime = 0;
+                    }
+                    audio.play();
+                    currentlyPlaying = audio;
+          });
+    });
+    </script>
+</body>
+</html>

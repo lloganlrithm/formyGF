@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+body{
+    background-image: url(Imge/Wallpapepixle.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    margin: 0%;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    font-family: "Pixelify Sans", sans-serif;
+}
+.Box{
+    background: white;
+    border: 4px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    height: 250px;
+    box-shadow: 6px 6px 0 black;
+    font-size: 20px;
+    text-align: center;
+}
+/* .Box p {
+    gap: 20px;
+} */
+.heart img{
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#TextBack2{
+    margin-top: 2px;
+    margin-bottom: 10px;
+    font-size: 38px;
+    font-weight: 10px;
+    text-decoration: underline;
+    object-fit: contain;
+    justify-content: center;
+    position: absolute;
+    left: 46%;
+    top: 80%;
+    cursor: pointer;
+}
